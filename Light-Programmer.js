@@ -1,18 +1,16 @@
-var el_up = document.getElementById("GFG_UP");
-var el_down = document.getElementById("GFG_DOWN");
-var state = 1;
+var state = true;
 
 function changeColor(color) {
     document.body.style.background = color;
 }
 
 function gfg_Run() {
-    if (state == 1) {
-        state = 0;
+    if (state) {
+        state = false;
         changeColor('Black');
     }
     else {
-        state = 1;
+        state = true;
         changeColor('White');
     }
 }		
